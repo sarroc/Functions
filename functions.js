@@ -15,16 +15,16 @@ console.log(nickname);
 console.log("Hi!");
 }
 
-//function greet(nickname) {
+function greet(nickname) {
 console.log(`Hi, ${nickname}!`);
 }
 
 //MATH
-function sum(x, y) {
+function summe(x, y) {
 console.log(x + y);
 }
 
-function divide(x, y) {
+function div(x, y) {
 console.log(x / y);
 }
 
@@ -109,27 +109,27 @@ return false;
 //AVERAGE
 function avg(arr) {
   let total = 0;
-loop over each number
+// loop over each number
   for (let num of arr) {
-add them together
+// add them together
 total += num;
   }
-divide by number of nums
+// divide by number of nums
   return total / arr.length;
 }
 
 
 Pangram 
 // (sentence using every letter of a given alphabet at least once)
-Waltz, bad nymph, for quick jigs vex.
-Sphinx of black quartz, judge my vow.
-How quickly daft jumping zebras vex!
-The five boxing wizards jump quickly.
-Pack my box with five dozen liquor jugs.
+// Waltz, bad nymph, for quick jigs vex.
+// Sphinx of black quartz, judge my vow.
+// How quickly daft jumping zebras vex!
+// The five boxing wizards jump quickly.
+// Pack my box with five dozen liquor jugs.
 
 function isPangram(phrase) {
 let lowerCased = phrase.toLowerCase(); //so string can be uppercase
-loop over each letter of the alphabet
+// loop over each letter of the alphabet
 for (let letter of "abcdefghijklmnopqrstuvwxyz") {
 if (lowerCased.indexOf(letter) === -1) {
 return false;
@@ -187,7 +187,7 @@ function getCard() {
   return { value: pick(values), suit: pick(suits) };
 }
 
-Function Scope
+// Function Scope
 function isPerson(){
 let person = 'Charlie';
 const age = 40
@@ -210,4 +210,5 @@ function birdWatch() {
   console.log(bird);
 }
 birdWatch();
-console.log(bird);
+console.log(bird)
+}
