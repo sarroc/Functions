@@ -1,19 +1,19 @@
-const numbers = [20, 21, 22, 23, 24,25,26,27];
+const numbers = [20, 21, 22, 23, 24, 25, 26, 27];
 
 numbers.forEach(function (num) {
-console.log(num);
-})
+    console.log(num);
+});
 
 function printTriple(n) {
     console.log(n * 3);
-}
+};
 
 numbers.forEach(printTriple);
 // anonymous function, is only needed once
 
-numbers.forEach(function(num, idx) {
+numbers.forEach(function (num, idx) {
     console.log(idx, num);
-})
+});
 
 const books =[{
     title: 'Fourth Wing',

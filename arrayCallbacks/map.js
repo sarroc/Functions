@@ -17,6 +17,28 @@ const abbrevs = words.map(function(word) {
     return word.toUpperCase().split('').join('.');
 })
 
-const titles = books.map(function(b) {
+const reads =[{
+    title: 'Fourth Wing',
+    author: ['Rebecca Yarros'],
+    rating: 5
+    },
+    {
+    title: 'ACOTAR',
+    author: ['Sarah J. Maas'],
+    rating: 4.75
+    },
+    {
+    title: 'Shatter Me',
+    author: ['Tahereh Mafi'],
+    rating: 4.5
+    },
+    {
+    title: 'Grace and Fury',
+    author: ['Tracy Bangart'],
+    rating: 4.75
+    }
+]
+
+const titles = reads.map(function(b) {
     return b.title
 })
